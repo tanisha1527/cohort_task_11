@@ -147,14 +147,6 @@ main {
           opacity: 0.6;
           line-height: 1.5;
         }
-
-        button {
-          width: fit-content;
-          border: none;
-          outline: none;
-          padding: 0.7rem 1rem;
-          border-radius: 0.5rem;
-        }
       }
     }
   }
@@ -193,14 +185,6 @@ main {
           font-size: 1.5rem;
           opacity: 0.6;
           line-height: 1.5;
-        }
-
-        button {
-          width: fit-content;
-          border: none;
-          outline: none;
-          padding: 0.7rem 1rem;
-          border-radius: 0.5rem;
         }
       }
     }
@@ -270,6 +254,60 @@ main {
       .card:nth-child(3) {
         background-image: url(./img-5.png);
       }
+  }
+
+  section.view6 {
+    width: 100%;
+    padding: 1rem;
+    @include flex-column(1rem);
+
+    .top {
+      width: 100%;
+
+      img {
+        width: 100%;
+        border-radius: 0.7rem;
+      }
+    }
+
+    .bottom {
+      background-color: #292929;
+      border-radius: 0.7rem;
+      padding: 1.5rem;
+      @include flex-column(3rem);
+
+      .text {
+        @include flex-column(0.7rem);
+        padding-bottom: 8rem;
+
+        h1 {
+          font-size: 2.5rem;
+          font-weight: 200;
+          text-transform: uppercase;
+        }
+
+      }  
+
+        .button {
+          display: flex;
+          gap: 2rem;
+          margin-bottom: 1.5rem;
+
+          p {
+            font-size: 1rem;
+            font-weight: 100; 
+
+            i {
+            font-size: 1.6rem;
+            padding: 0.2rem;
+            background-color:  #292929;
+            border: 1px solid #535252;
+            border-radius: 50%;
+            margin-right: 0.8rem;
+          } 
+          }
+        }
+    }
   }
 
 }
@@ -360,6 +398,40 @@ main {
      section.view5 {
       flex-direction: row;
       padding: 1rem 4rem;
+    }
+
+     section.view6 {
+      flex-direction: row;
+      padding: 1rem 4rem;
+
+      .top,
+      .bottom {
+        width: 50%;
+      }
+
+      .bottom {
+        justify-content: space-between;
+        padding: 3rem;
+
+        .button {
+          display: flex;
+          gap: 2rem;
+
+          p {
+            font-size: 1rem;
+            font-weight: 100;
+
+          i {
+            font-size: 1.6rem;
+            padding: 0.2rem;
+            background-color:  #292929;
+            border: 1px solid #535252;
+            border-radius: 50%;
+            margin-right: 0.8rem;
+          }  
+          }
+        }
+      }
     }
     
   }
