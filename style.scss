@@ -242,18 +242,16 @@ main {
     }
 
     .card:nth-child(1) {
-        background-image: url(./img-3.png);
-      }
+      background-image: url(./img-3.png);
+    }
 
-      
-      .card:nth-child(2) {
-        background-image: url(./img-4.png);
-      }
+    .card:nth-child(2) {
+      background-image: url(./img-4.png);
+    }
 
-      
-      .card:nth-child(3) {
-        background-image: url(./img-5.png);
-      }
+    .card:nth-child(3) {
+      background-image: url(./img-5.png);
+    }
   }
 
   section.view6 {
@@ -285,31 +283,67 @@ main {
           font-weight: 200;
           text-transform: uppercase;
         }
+      }
 
-      }  
+      .button {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 1.5rem;
 
-        .button {
-          display: flex;
-          gap: 2rem;
-          margin-bottom: 1.5rem;
+        p {
+          font-size: 1rem;
+          font-weight: 100;
 
-          p {
-            font-size: 1rem;
-            font-weight: 100; 
-
-            i {
+          i {
             font-size: 1.6rem;
             padding: 0.2rem;
-            background-color:  #292929;
+            background-color: #292929;
             border: 1px solid #535252;
             border-radius: 50%;
             margin-right: 0.8rem;
-          } 
           }
         }
+      }
     }
   }
 
+  section.view7 {
+    @include flex-column(2rem);
+    width: 100%;
+    padding: 1rem;
+
+    .connect {
+      @include flex-column(3rem);
+      background-color: rgb(249, 217, 75);
+      color: black;
+      padding: 1rem;
+      border-radius: 10px;
+
+      .text {
+        color: black;
+
+        p {
+          font-size: 16px;
+          padding-bottom: 10px;
+        }
+
+        h1 {
+          font-size: 3rem;
+          font-weight: 200;
+          text-transform: uppercase;
+        }
+      }
+
+      .button {
+        button {
+          background-color: #000;
+          color: #fff;
+          padding: 10px 20px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 900px) {
@@ -370,7 +404,7 @@ main {
         }
       }
     }
-    
+
     section.view4 {
       flex-direction: row;
       padding: 1rem 4rem;
@@ -395,12 +429,12 @@ main {
       }
     }
 
-     section.view5 {
+    section.view5 {
       flex-direction: row;
       padding: 1rem 4rem;
     }
 
-     section.view6 {
+    section.view6 {
       flex-direction: row;
       padding: 1rem 4rem;
 
@@ -421,18 +455,50 @@ main {
             font-size: 1rem;
             font-weight: 100;
 
-          i {
-            font-size: 1.6rem;
-            padding: 0.2rem;
-            background-color:  #292929;
-            border: 1px solid #535252;
-            border-radius: 50%;
-            margin-right: 0.8rem;
-          }  
+            i {
+              font-size: 1.6rem;
+              padding: 0.2rem;
+              background-color: #292929;
+              border: 1px solid #535252;
+              border-radius: 50%;
+              margin-right: 0.8rem;
+            }
           }
         }
       }
     }
-    
+
+    section.view7 {
+      padding: 1rem 4rem;
+
+      .connect {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 40px;
+
+        .text {
+          color: black;
+
+          p {
+            font-size: 16px;
+            padding-bottom: 10px;
+          }
+
+          h1 {
+            font-size: 6rem;
+            font-weight: 200;
+            text-transform: uppercase;
+          }
+        }
+
+        .button {
+        button {
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+      }
+    }
   }
 }

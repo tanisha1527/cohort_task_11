@@ -293,6 +293,40 @@ main section.view6 .bottom .button p i {
   border-radius: 50%;
   margin-right: 0.8rem;
 }
+main section.view7 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem;
+}
+main section.view7 .connect {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: rgb(249, 217, 75);
+  color: black;
+  padding: 1rem;
+  border-radius: 10px;
+}
+main section.view7 .connect .text {
+  color: black;
+}
+main section.view7 .connect .text p {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+main section.view7 .connect .text h1 {
+  font-size: 3rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+main section.view7 .connect .button button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
 
 @media (min-width: 900px) {
   main section.view1 {
@@ -390,5 +424,30 @@ main section.view6 .bottom .button p i {
     border: 1px solid #535252;
     border-radius: 50%;
     margin-right: 0.8rem;
+  }
+  main section.view7 {
+    padding: 1rem 4rem;
+  }
+  main section.view7 .connect {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 40px;
+  }
+  main section.view7 .connect .text {
+    color: black;
+  }
+  main section.view7 .connect .text p {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  main section.view7 .connect .text h1 {
+    font-size: 6rem;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+  main section.view7 .connect .button button {
+    font-size: 20px;
+    cursor: pointer;
   }
 }/*# sourceMappingURL=style.css.map */
