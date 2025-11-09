@@ -31,6 +31,9 @@ main {
   gap: 0rem;
   align-items: center;
 }
+main .sectionNav {
+  display: none;
+}
 main section.view1 {
   width: 100%;
   padding: 1rem;
@@ -500,7 +503,7 @@ main section.view8 .footer-bottom-right .to-top button:hover {
   }
   main section.view2 {
     flex-direction: row;
-    padding: 1rem 4rem;
+    padding: 4rem;
   }
   main section.view3 {
     flex-direction: row-reverse;
@@ -628,5 +631,57 @@ main section.view8 .footer-bottom-right .to-top button:hover {
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
+  }
+  main .sectionNav {
+    width: 100%;
+    background-color: #1d1d1d;
+    padding: 1rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.7rem;
+    top: 0;
+    z-index: 100;
+  }
+  main .sectionNav .logo {
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+  main .sectionNav .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  main .sectionNav .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #292929;
+    font-size: 0.95rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  main .sectionNav .nav-links a:hover {
+    background-color: #d6c36e;
+    color: #111;
+  }
+  main .sectionNav .nav-btn button {
+    background-color: #d6c36e;
+    color: #111;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  main .sectionNav .nav-btn button:hover {
+    background-color: #e5d47c;
   }
 }/*# sourceMappingURL=style.css.map */
